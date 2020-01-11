@@ -1,10 +1,10 @@
 /*------------------------------------menu-items----------------*/
 
-.wrapper {
-
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 90px;
 
 }
 
@@ -12,16 +12,15 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    overflow-x: hidden;
 }
 
 .menu__search {
-    margin-right: 50px;
+    margin-left: 50px;
     font-size: 14px;
 }
 
 .menu__items {
-    margin-left: 50px;
+    margin-right: 100px;
 }
 
 .menu__items-list {
@@ -40,13 +39,12 @@
     content: "";
     display: inline-block;
     position: absolute;
-    height: 16px;
+    height: 17px;
     top: -7px;
     right: 5px;
     margin-top: 9px;
-    width: 3px;
-    background-color:
-        white;
+    width: 2px;
+    background-color: white;
 
 }
 
@@ -59,14 +57,66 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    padding: 10px 15px;
-    transition: background 0.2s linear;
+    padding: 5px 10px;
+    transition: background 0.4s linear;
 }
 
 .menu__items-list a:hover {
-    border-bottom: 3px solid deepskyblue;
-    color: deepskyblue;
+    color: black;
+    background-color: white;
 }
+
+
+
+
+
+/*-----------------------------------menu buttons-----------------------*/
+
+
+
+.menu__btn a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    text-transform: uppercase;
+    margin: 10px;
+    transition: all.3s;
+
+    border-radius: 25px;
+}
+
+.login {
+    margin-left: 150px;
+    padding: 8px 30px;
+
+}
+
+.login:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 31px;
+    top: -6px;
+    right: -14px;
+    margin-top: 8px;
+    width: 3px;
+    background-color: white;
+
+}
+
+.menu__btn a:hover {
+    color: white;
+    background-color: deepskyblue;
+}
+
+.sign-up {
+    padding: 8px 30px;
+
+
+}
+
+
 
 /*------------------------------------search----------------*/
 
