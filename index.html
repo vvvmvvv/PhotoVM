@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/slider.css">
-
-
+    <link rel="stylesheet" href="style/map.css">
 
     <script src="https://kit.fontawesome.com/05f999c700.js" crossorigin="anonymous"></script>
 
@@ -20,64 +19,70 @@
 
 <body>
 
-    <header>
+    <div class="outer">
+        <div class="content">
+            <header>
+                <nav>
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="img/logo.png" alt="logo" height="110px" width="110px"></a>
+                            </div>
 
-        <nav>
-            <div class="container">
-                <div class="wrapper">
-                    <div class="logo">
-                        <a class="logo" href="#">
-                            <img src="img/logo.png" alt="logo" height="120px" width="120px">
-                        </a>
-                    </div>
-
-                    <div class="menu">
-                        <div class="menu-search">
-                            <div class="wrap">
-                                <div class="search">
-                                    <input type="text" class="searchTerm" placeholder="Search...">
-                                    <button type="submit" class="searchButton">
-                                        <i class="fa fa-search"></i>
-                                    </button>
+                            <div class="menu">
+                                <div class="menu__search">
+                                        <div class="search">
+                                            <input type="text" class="searchTerm" placeholder="Search...">
+                                            <button type="submit" class="searchButton">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                </div>
+                                <div class="menu__items">
+                                        <ul class="menu__items-list">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="photos.html">Photos</a></li>
+                                            <li><a href="contacts.html">Contacts</a></li>
+                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="signup.html">Sign Up</a></li>
+                                        </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="menu-items">
-                            <label for="checkbox-menu">
-                                <ul class="menu-list">
-                                    <li><a  href="#">Photos</a></li>
-                                    <li><a  href="#contacts">Contacts</a></li>
-                                    <li><a  href="#login">Login</a></li>
-                                    <li><a href="#signup"><span class="bordered-btn">Sign Up</span></a></li>
-                                </ul>
-                            </label>
+
                         </div>
                     </div>
+                </nav>
+            </header>
 
+            <div class="wraper-slider">
+                <div class="container">
+                    <div class="slider">
+                        <figure>
+                            <a href="#"><img src="img/s1.jpg" alt="" height="700px"></a>
+                            <a href="#"><img src="img/s2.jpg" alt="" height="700px"></a>
+                            <a href="#"><img src="img/s3.jpg" alt="" height="700px"></a>
+                            <a href="#"><img src="img/s4.jpeg" alt="" height="700px"></a>
+                        </figure>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
 
+            <section class="top">
 
+            </section>
+        </div>
 
-    <div class="wraper-slider">
-
-    
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <p class=""><i class="far fa-copyright"></i> Copyright 2020 <a href="#">Vladimir Mikulin</a> All Rights
+                        Reserved</p>
+                </div>
+            </div>
+        </footer>
 
     </div>
-
-    <footer>
-			<div class="container">
-
-
-				<div class="row">
-						<p class=""><i class="far fa-copyright"></i> Copyright 2020 <a href="#">PhotoVM</a> All Rights Reserved</p>
-				</div>
-			</div>
-    </footer>
-
-
 </body>
 
 </html>

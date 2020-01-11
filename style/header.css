@@ -1,43 +1,69 @@
-
-
 /*------------------------------------menu-items----------------*/
 
-.menu{
+.wrapper {
+
     display: flex;
     justify-content: space-between;
-    
-}
-
-.menu-items{
-    padding-left: 50px;
+    align-items: center;
 
 }
 
-.menu-search{
-    padding-right: 50px;
-
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    overflow-x: hidden;
 }
 
-.menu-list{
+.menu__search {
+    margin-right: 50px;
+    font-size: 14px;
+}
+
+.menu__items {
+    margin-left: 50px;
+}
+
+.menu__items-list {
     display: flex;
 }
-.menu-list li {
-    list-style: none;
-    padding: 5px 13px;
-    transition: background 0.2s linear;
-}
-.menu-list a {
-    border: none;
-    border-right: #998ce0;
-    color: black;
-    text-decoration: none;
-    align-self: center;
-    font-size: 16px;
-    padding: 5px 13px;
+
+.menu__items-list li {
+    position: relative;
+    list-style-type: none;
+    padding: 0px 10px;
     transition: background 0.2s linear;
 }
 
-.menu li a:hover {
+.menu__items-list li::after {
+
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 16px;
+    top: -7px;
+    right: 5px;
+    margin-top: 9px;
+    width: 3px;
+    background-color:
+        white;
+
+}
+
+.menu__items-list li:last-child:after {
+    content: none;
+}
+
+.menu__items-list a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: background 0.2s linear;
+}
+
+.menu__items-list a:hover {
     border-bottom: 3px solid deepskyblue;
     color: deepskyblue;
 }
@@ -46,47 +72,40 @@
 
 
 .search {
-  width: 100%;
-  position: relative;
-  display: flex;
+    width: 100%;
+    display: flex;
 }
 
 .searchTerm {
-  width: 100%;
-  border: 3px solid deepskyblue;
-  border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #667c72;
+    width: 100%;
+    border: 3px solid white;
+    border-right: none;
+    padding: 5px 10px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
 }
 
-.searchTerm:focus{
-  color: black;
+.searchTerm:focus {
+    color: black;
 }
 
 .searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid deepskyblue;
-  background: deepskyblue;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
+    width: 40px;
+    height: 33px;
+    border: 2px solid white;
+    background: black;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 22px;
 }
 
 
 
 /*------------------------------------mobile----------------*/
-@media screen and (max-width: 964px){
-
-}
+@media (max-width: 992px) {}
 
 
 
-@media screen and (max-width: 768px){
-    
-}
+@media (max-width: 768px) {}
