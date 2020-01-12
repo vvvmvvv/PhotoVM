@@ -21,7 +21,8 @@ nav{
 
 .menu__items {
     margin-right: 50px;
-    border-bottom: 1px solid white;
+    padding: 5px;
+    border-bottom: 2px solid deepskyblue;
 }
 
 .menu__items-list {
@@ -78,8 +79,7 @@ nav{
 .menu__btn a{
     position: relative;
     text-decoration: none;
-    color: black;
-    background-color: #fff;
+    
     text-transform: uppercase;
     margin: 10px;
     transition: all .3s ;
@@ -89,6 +89,8 @@ nav{
 .login{
    
     padding: 8px 30px;
+    color: black;
+    background-color:white;
     
 }
 
@@ -101,15 +103,22 @@ nav{
     right: -14px;
     margin-top: 8px;
     width: 3px;
+    transform: rotate(17deg);
     background-color:white;
     
 }
-.menu__btn a:hover{
+.menu__btn .login:hover{
     color: white;
-    background-color: deepskyblue;
+    background-color: cadetblue;
+}
+.menu__btn .sign-up:hover{
+    color: white;
+    background-color: cadetblue;
 }
 .sign-up{
     padding: 8px 30px;
+    color: white;
+    background-color: deepskyblue;
     
 
 }
@@ -117,6 +126,12 @@ nav{
 
 
 /*------------------------------------search----------------*/
+
+
+.menu__search{
+    width: 150px;
+    padding-right: 100px;
+}
 
 .search {
   width: 100%;
@@ -151,16 +166,3 @@ nav{
   font-size: 25px;
 }
 
-/*Resize the wrap to see the search bar change!*/
-.menu__search{
-  width: 150px;
-  padding-right: 100px;
-}
-
-
-/*------------------------------------mobile----------------*/
-@media (max-width: 992px) {}
-
-
-
-@media (max-width: 768px) {}
